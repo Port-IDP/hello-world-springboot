@@ -25,7 +25,7 @@ jobs:
         run: mvn test
 
       - name: Run Checkstyle with Google Style
-        uses: checkstyle/checkstyle@v10.17.0  # Replace with the desired version
+        uses: checkstyle/checkstyle@v1.14.0  # Replace with the desired version
         with:
           checkstyle_config: https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml
           fail_on_error: true  # Set to false if you want warnings without failing build
