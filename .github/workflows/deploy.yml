@@ -23,6 +23,12 @@ jobs:
 
       - name: Run Tests  
         run: mvn test
+
+      - name: Run Checkstyle with Google Style
+        uses: checkstyle/checkstyle@v1.10.0  # Replace with the desired version
+        with:
+          checkstyle_config: https://raw.githubusercontent.com/checkstyle/checkstyle/master/src/main/resources/google_checks.xml
+          fail_on_error: true  # Set to false if you want warnings without failing build
         
       # - name: Build and push Docker image  
       #   uses: mr-smithers-excellent/docker-build-push@v5
