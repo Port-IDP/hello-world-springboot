@@ -24,13 +24,13 @@ jobs:
       - name: Run Tests  
         run: mvn test
         
-      - name: Build and push Docker image  
-        uses: mr-smithers-excellent/docker-build-push@v5
-        with:
-          image: myapp  
-          tags: v1, latest
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Build and push Docker image  
+      #   uses: mr-smithers-excellent/docker-build-push@v5
+      #   with:
+      #     image: myapp  
+      #     tags: v1, latest
+      #     registry: ghcr.io
+      #     username: ${{ github.actor }}
+      #     password: ${{ secrets.GITHUB_TOKEN }}
         
       # Add steps to deploy the application here    
