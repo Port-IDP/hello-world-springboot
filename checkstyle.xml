@@ -11,6 +11,9 @@
     <module name="TreeWalker">
         <module name="UnusedImports"/>
         <module name="HideUtilityClassConstructor"/>
+        <module name="AvoidStarImport"/>
+        <module name="ConstantName"/>
+        <module name="EmptyBlock"/>
         <module name="JavadocMethod">
             <property name="allowMissingParamTags" value="true"/>
             <property name="allowMissingReturnTag" value="true"/>
