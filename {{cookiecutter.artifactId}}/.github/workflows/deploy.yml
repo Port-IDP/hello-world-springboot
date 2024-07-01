@@ -30,8 +30,8 @@ jobs:
           # Create a PAT in GitHub and give access to repo. 
           # Configure secret at org. level.
           # Provide actual secret name in the following line after repo. gets created.
-          github_token: ${{ cookiecutter.reviewDogSecret }}
-          reporter: ${{ cookiecutter.deployWorkflowReporterName }}
+          github_token: {{ cookiecutter.reviewDogSecret }}
+          reporter: {{ cookiecutter.deployWorkflowReporterName }}
           level: warning
           # Checkstyle configuration specifies which rule-set to apply during the scan.
           # There are 2 built-in configurations - 1) google_checks.xml 2) sun_checks.xml
