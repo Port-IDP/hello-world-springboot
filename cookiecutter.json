@@ -3,5 +3,6 @@
     "artifactId": "demo",
     "javaVersion": "17",
     "junit": ["yes","no"],
+    "reviewDogSecret": "test",
     "__package": "{{ cookiecutter.groupId + '.' + cookiecutter.artifactId }}"
 }

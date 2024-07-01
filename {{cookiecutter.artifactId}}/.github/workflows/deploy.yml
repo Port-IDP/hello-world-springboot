@@ -27,8 +27,10 @@ jobs:
       - name: Run Checkstyle with Google Style
         uses: dbelyaev/action-checkstyle@master
         with:
-          # Create a PAT and give access to repo. Uncomment following line in your repo.
-          github_token: ${{ secrets.REVIEW_DOG_GITHUB_TOKEN }}
+          # Create a PAT and give access to repo. 
+          # Configure secret either at org. level
+          # Provide actual secret name in the following line.
+          github_token: ${{ cookiecutter.reviewDogSecret }}
           reporter: github-check
           level: warning
           # Checkstyle configuration specifies which rule-set to apply during the scan.
