@@ -4,6 +4,6 @@
     "javaVersion": "17",
     "junit": ["yes","no"],
     "reviewDogSecret": "test",
-    "deployWorkflowReporterName": "github-check",
+    "deployWorkflowReporterName": "check",
     "__package": "{{ cookiecutter.groupId + '.' + cookiecutter.artifactId }}"
 }
