@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * render the response as plain text, and not as a view.
  */
 @RestController
-public class HelloWorldController {
+public class MainController {
   
   /**
    * this method returns hello world message.
