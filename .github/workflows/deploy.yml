@@ -28,7 +28,7 @@ jobs:
         uses: dbelyaev/action-checkstyle@master
         with:
           github_token: ${{ secrets.REVIEW_DOG_GITHUB_TOKEN }}
-          reporter: github-review
+          reporter: github-check
           level: warning
         # uses: checkstyle/checkstyle@v1.14.0  # Replace with the desired version
         # with:
