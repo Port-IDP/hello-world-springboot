@@ -7,6 +7,13 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+/**
+ * Test class for the HelloWorldController.
+ * This class uses the @WebMvcTest annotation to load only the web layer of the application,
+ * including the controller and its dependencies.
+ */
+//@SpringBootTest
+//@AutoConfigureMockMvc */
 @WebMvcTest(HelloWorldController.class)
 public class HelloWorldControllerTests {
 
