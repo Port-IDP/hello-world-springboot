@@ -27,11 +27,11 @@ jobs:
       - name: Run Checkstyle with Google Style
         uses: dbelyaev/action-checkstyle@master
         with:
-          # Create a PAT and give access to repo. 
-          # Configure secret either at org. level
-          # Provide actual secret name in the following line.
+          # Create a PAT in GitHub and give access to repo. 
+          # Configure secret at org. level.
+          # Provide actual secret name in the following line after repo. gets created.
           github_token: ${{ cookiecutter.reviewDogSecret }}
-          reporter: github-check
+          reporter: ${{ cookiecutter.deployWorkflowReporterName }}
           level: warning
           # Checkstyle configuration specifies which rule-set to apply during the scan.
           # There are 2 built-in configurations - 1) google_checks.xml 2) sun_checks.xml
