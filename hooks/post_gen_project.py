@@ -13,7 +13,7 @@ if '{{ cookiecutter.junit }}' == 'yes':
 	os.makedirs(testDir, exist_ok=True)
 	os.makedirs(testControllerDir, exist_ok=True)
 
-os.rename('{{ cookiecutter.artifactId }}.java', srcDir + '/{{ cookiecutter.artifactId }}Application.java')
+os.rename('{{ cookiecutter.artifactId }}Application.java', srcDir + '/{{ cookiecutter.artifactId }}Application.java')
 os.rename('{{ cookiecutter.artifactId }}Controller.java', srcControllerDir + '/{{ cookiecutter.artifactId }}Controller.java')
 
 os.rename('{{ cookiecutter.artifactId }}ApplicationTests.java', testDir + '/{{ cookiecutter.artifactId }}ApplicationTests.java')
