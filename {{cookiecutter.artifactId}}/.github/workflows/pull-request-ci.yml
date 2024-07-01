@@ -22,8 +22,8 @@ jobs:
         uses: dbelyaev/action-checkstyle@master
         with:
           # Create a PAT and give access to repo. Uncomment following line in your repo.
-          #github_token: ${{ secrets.REVIEW_DOG_GITHUB_TOKEN }}
-          reporter: github-check
+          github_token: ${{ secrets.REVIEW_DOG_GITHUB_TOKEN }}
+          reporter: github-pr-check
           level: warning
           # Checkstyle configuration specifies which rule-set to apply during the scan.
           # There are 2 built-in configurations - 1) google_checks.xml 2) sun_checks.xml
