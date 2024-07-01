@@ -1,15 +1,9 @@
   
-name: Deploy
-
-on:
-  push:
-    branches: [ main ]
-
+name: Pull Request CI
+on: [pull_request]
 jobs:
-
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: Set up JDK 17
@@ -36,14 +30,3 @@ jobs:
           # https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml
           # To leverage sun_checks.xml, uncomment the following line of code.
           # checkstyle_config: sun_checks.xml
-        
-      # - name: Build and push Docker image  
-      #   uses: mr-smithers-excellent/docker-build-push@v5
-      #   with:
-      #     image: myapp  
-      #     tags: v1, latest
-      #     registry: ghcr.io
-      #     username: ${{ github.actor }}
-      #     password: ${{ secrets.GITHUB_TOKEN }}
-        
-      # Add steps to deploy the application here    
