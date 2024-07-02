@@ -13,11 +13,11 @@ if '{{ cookiecutter.junit }}' == 'yes':
 	os.makedirs(testDir, exist_ok=True)
 	os.makedirs(testControllerDir, exist_ok=True)
 
-os.rename('{{ cookiecutter.artifactId }}Application.java', srcDir + '/{{ cookiecutter.artifactId }}Application.java')
-os.rename('{{ cookiecutter.artifactId }}Controller.java', srcControllerDir + '/{{ cookiecutter.artifactId }}Controller.java')
+os.rename("MainApplication.java", srcDir + '/MainApplication.java')
+os.rename("MainController.java", srcControllerDir + '/MainController.java')
 
-os.rename('{{ cookiecutter.artifactId }}ApplicationTests.java', testDir + '/{{ cookiecutter.artifactId }}ApplicationTests.java')
-os.rename('{{ cookiecutter.artifactId }}ControllerTests.java', testControllerDir + '/{{ cookiecutter.artifactId }}ControllerTests.java')
+os.rename("MainApplicationTests.java", testDir + '/MainApplicationTests.java')
+os.rename("MainControllerTests.java", testControllerDir + '/MainControllerTests.java')
 
 os.system('mvn wrapper:wrapper')
 
